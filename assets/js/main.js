@@ -36,9 +36,9 @@ const sr = ScrollReveal({
 sr.reveal('.section-title',{}); 
 
 /*SCROLL HOME*/
-sr.reveal('.home__title',{}); 
+sr.reveal('.home__title-color',{}); 
 sr.reveal('.home__img',{delay: 400}); 
-sr.reveal('.home__social-icon',{ interval: 200}); 
+sr.reveal('.home__social-icon',{ delay: 400, interval: 400}); 
 
 /*SCROLL ABOUT*/
 
