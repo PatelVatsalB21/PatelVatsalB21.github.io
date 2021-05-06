@@ -210,12 +210,13 @@ img{
   color: var(--yellow-light);
 }
 .hero-bg {
+  position: relative;
   background-image: url(../img/hero_img.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding: .05rem .5rem;
-}
+  background-position: top center;	
+ }
 
 .hero-text {
   display: table;

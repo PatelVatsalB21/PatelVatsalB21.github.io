@@ -1,3 +1,13 @@
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+	$(".hero-bg").css({
+		backgroundSize: (100 + scroll/5)  + "%",
+		top: -(scroll/10)  + "%",
+		"-webkit-filter": "blur(" + (scroll/200) + "px)",
+		filter: "blur(" + (scroll/200) + "px)"
+	});
+});
+
 /*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
@@ -107,6 +117,4 @@ const bsr = ScrollReveal({
 bsr.reveal('.footer',{delay: 200,interval: 400})
 
 bsr.reveal('.footer__icon',{delay: 900, intervak: 300})
-
-
 
