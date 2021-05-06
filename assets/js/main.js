@@ -1,10 +1,30 @@
-$(window).scroll(function() {
+let mainNavLinks = document.querySelectorAll("nav ul li a");
+let mainSections = document.querySelectorAll("section");
+
+let lastId;
+let cur = [];
+
+$(window).scroll(function(){
   var scroll = $(window).scrollTop();
 	$(".hero-bg").css({
 		backgroundSize: (100 + scroll/10)  + "%",
 		top: -(scroll/10)  + "%",
 		opacity: 1 - (scroll/700)
 	});
+
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach(function (link, i) {
+    let section = document.querySelector(link.hash);
+    if (
+      section.offsetTop - 10 <= fromTop &&
+      section.offsetTop + section.offsetHeight + 15 >  fromTop
+    ) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
 });
 
 /*===== MENU SHOW =====*/ 
@@ -95,7 +115,6 @@ const rsr = ScrollReveal({
 });
 
 
-rsr.reveal('.nav__item',{delay: 200, interval: 400}); 
 
 rsr.reveal('.about__subtitle',{delay: 200}); 
 rsr.reveal('.about__text',{delay: 400}); 
