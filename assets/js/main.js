@@ -1,10 +1,9 @@
 $(window).scroll(function() {
   var scroll = $(window).scrollTop();
 	$(".hero-bg").css({
-		backgroundSize: (100 + scroll/5)  + "%",
+		backgroundSize: (100 + scroll/10)  + "%",
 		top: -(scroll/10)  + "%",
-		"-webkit-filter": "blur(" + (scroll/200) + "px)",
-		filter: "blur(" + (scroll/200) + "px)"
+		opacity: 1 - (scroll/700)
 	});
 });
 
