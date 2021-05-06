@@ -17,8 +17,8 @@ $(window).scroll(function(){
   mainNavLinks.forEach(function (link, i) {
     let section = document.querySelector(link.hash);
     if (
-      section.offsetTop - 10 <= fromTop &&
-      section.offsetTop + section.offsetHeight + 15 >  fromTop
+      section.offsetTop - 35 <= fromTop &&
+      section.offsetTop + section.offsetHeight - 35 >  fromTop
     ) {
       link.classList.add("active");
     } else {
