@@ -7,9 +7,9 @@ let cur = [];
 $(window).scroll(function() {
   var scroll = $(window).scrollTop();
   $(".hero-bg").css({
-    backgroundSize: (100 + scroll / 10) + "%",
+    backgroundSize: (100 + scroll / 80) + "%",
     top: -(scroll / 10) + "%",
-    opacity: 1 - (scroll / 700)
+    opacity: 1 - (scroll / 800)
   });
 
   let fromTop = window.scrollY;
@@ -31,12 +31,18 @@ var myVar;
 
 function loader() {
   myVar = setTimeout(showPage, 4950);
+  document.getElementById("body").style.overflow = "hidden";	  
+  window.location.href = mainNavLinks[2];  
+  setTimeout(function() { 
+  window.location.href = mainNavLinks[0]; 
+  }, 4400); 
 }
 
 function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("mainDiv").style.display = "block";
+  document.getElementById("preloader").style.display = "none";	  
+  document.getElementById("body").style.overflow = "visible";	
 }
+
 
 /*===== MENU SHOW =====*/
 const showMenu = (toggleId, navId) => {
@@ -66,6 +72,15 @@ function linkAction() {
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
 /*===== SCROLL REVEAL ANIMATION =====*/
+const dsr = ScrollReveal({
+  origin: 'right',
+  distance: '80px',
+  duration: 800,
+  reset: false
+});
+
+dsr.reveal('.nav__item', {delay: 500, interval: 400});
+
 const sr = ScrollReveal({
   origin: 'top',
   distance: '80px',
@@ -154,7 +169,9 @@ const rsr = ScrollReveal({
   reset: true
 });
 
-
+rsr.reveal('.button__contact', {
+  delay: 300
+});
 
 rsr.reveal('.about__subtitle', {
   delay: 200
@@ -179,7 +196,7 @@ rsr.reveal('.skills__exp', {
 
 const bsr = ScrollReveal({
   origin: 'bottom',
-  distance: '80px',
+  distance: '100px',
   duration: 1000,
   reset: true
 });
@@ -190,6 +207,6 @@ bsr.reveal('.footer', {
 })
 
 bsr.reveal('.footer__icon', {
-  delay: 900,
-  intervak: 300
+  delay: 800,
+  interval: 200
 })

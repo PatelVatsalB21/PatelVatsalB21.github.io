@@ -118,6 +118,18 @@ img {
 }
 
 /*Loader*/
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #151515;
+	z-index: 800;
+	height: 100%;
+	width: 100%;
+background-image: linear-gradient(to bottom, #0c1c36, #0b1d3a, #0b1e3d, #0a1f41, #0a2045, #0b244d, #0b2756, #0c2b5e, #0e326d, #103a7d, #12418e, #15499e);
+}
 .st0 {
   stroke-dasharray: 1000;
   stroke-dashoffset: 0;
@@ -132,6 +144,7 @@ img {
   width: 120px;
   height: 120px;
   margin: -76px 0 0 -76px;
+  padding: 0;
 }
 
 @keyframes dash {
@@ -283,7 +296,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.25rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
   cursor: pointer;
   border-radius: 50px;
   background-image: linear-gradient(to right, #fd9d55 0%, #fdd055 100%);
@@ -296,16 +309,17 @@ img {
 }
 
 .button__contact {
+  align-self: center;
   display: inline-block;
   color: var(--yellow-light);
-  padding: 0.75rem 2.5rem;
+  padding: 0.70rem 3.35rem;
   font-weight: var(--font-light);
   line-height: 3.5rem !important;
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
   cursor: pointer;
   border-radius: 50px;
   border: 3px solid var(--yellow-light);
@@ -338,10 +352,11 @@ img {
   margin: auto;
   border: 3px solid #15499e;
   padding: 3px;
-  transition: transform 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: transform 0.5s;
 }
 .about__img img:hover {
-  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   transform: scale(1.25);
 }
 .edu {
@@ -650,11 +665,11 @@ img {
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color: var(--second-color);
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
+background-image: linear-gradient(to bottom, #0c1c36, #0b1d3a, #0b1e3d, #0a1f41, #0a2045, #0b244d, #0b2756, #0c2b5e, #0e326d, #103a7d, #12418e, #15499e);
 }
 .footer__title {
   color: var(--yellow-light);

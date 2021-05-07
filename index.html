@@ -12,25 +12,7 @@
 					<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
 						<title>Portfolio website complete</title>
 					</head>
-					<body onload="loader()" style="margin:0;">
-						<div id="loader">
-							<svg width="150px" height="150px" id="Layer_1"
-								xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 215 245"
-	 style="enable-background:new 0 0 215 245;" xml:space="preserve">
-								<style type="text/css">
-	.st0{fill:none;stroke:#FDD055;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;}
-	.st1{fill:#FFCC66;}
-	.st2{font-family:'Calibri';}
-	.st3{font-size:176.2478px;}
-</style>
-								<path bx:shape="n-gon 250 250 240.588 240.588 6 0.05 1@1237432e" class="st0" d="M102.5,9.9c3.3-1.9,6.7-1.9,10,0l90,51.9
-	c3.3,1.9,5,4.8,5,8.7v103.9c0,3.8-1.7,6.7-5,8.7l-90,51.9c-3.3,1.9-6.7,1.9-10,0l-90-51.9c-3.3-1.9-5-4.8-5-8.7V70.6
-	c0-3.8,1.7-6.7,5-8.7L102.5,9.9z"/>
-								<text transform="matrix(1 0 0 1 57.9063 186.8438)" class="st1 st2 st3">V</text>
-							</svg>
-						</div>
-						<div id="mainDiv" style="display:none;">
+					<body onload="loader()" style="margin:0;" id="body">
 							<!--===== HEADER =====-->
 							<header class="l-header">
 								<nav class="nav bd-grid">
@@ -268,8 +250,25 @@
 																<i class="bx bxl-instagram"></i>
 															</a>
 														</div>
-													</footer>
-												</div>
+													    </footer>
+					<div id="preloader">													
+						<div id="loader">
+							<svg width="150px" height="150px" id="Layer_1"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 215 245" style="enable-background:new 0 0 215 245;" xml:space="preserve">
+								<style type="text/css">
+									.st0{fill:none;stroke:#FDD055;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;}
+									.st1{fill:#FFCC66;}
+									.st2{font-family:'Calibri';}
+									.st3{font-size:176.2478px;}
+								</style>
+								<path bx:shape="n-gon 250 250 240.588 240.588 6 0.05 1@1237432e" class="st0" d="M102.5,9.9c3.3-1.9,6.7-1.9,10,0l90,51.9
+									c3.3,1.9,5,4.8,5,8.7v103.9c0,3.8-1.7,6.7-5,8.7l-90,51.9c-3.3,1.9-6.7,1.9-10,0l-90-51.9c-3.3-1.9-5-4.8-5-8.7V70.6
+									c0-3.8,1.7-6.7,5-8.7L102.5,9.9z"/>
+								<text transform="matrix(1 0 0 1 57.9063 186.8438)" class="st1 st2 st3">V</text>
+							</svg>
+						</div>
+					</div>
 												<!--===== SCROLL REVEAL =====-->
 												<script src="https://unpkg.com/scrollreveal"></script>
 												<!--===== MAIN JS =====-->
