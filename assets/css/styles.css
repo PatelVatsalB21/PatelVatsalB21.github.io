@@ -124,16 +124,30 @@ img {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #151515;
 	z-index: 800;
 	height: 100%;
 	width: 100%;
-background-image: linear-gradient(to bottom, #0c1c36, #0b1d3a, #0b1e3d, #0a1f41, #0a2045, #0b244d, #0b2756, #0c2b5e, #0e326d, #103a7d, #12418e, #15499e);
+  	background-image: linear-gradient(to right, #fd9d55 0%, #fdd055 100%);    
 }
+
+#preloader.up {
+    -webkit-animation: slide-down .7s ease-out;
+    -moz-animation: slide-down .7s ease-out;
+}
+
+@-webkit-keyframes slide-down {
+    100% { opacity: 1; -webkit-transform: translateY(100%); }   
+    0% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@-moz-keyframes slide-down {
+     100% { opacity: 1; -moz-transform: translateY(100%); }   
+    0% { opacity: 1; -moz-transform: translateY(0); }
+}
+
 .st0 {
   stroke-dasharray: 1000;
   stroke-dashoffset: 0;
-  animation: dash 2.5s alternate infinite;
+  animation: dash 1.5s alternate infinite;
   animation-iteration-count: 2;
 }
 #loader {

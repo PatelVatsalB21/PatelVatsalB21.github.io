@@ -26,19 +26,22 @@ $(window).scroll(function() {
     }
   });
 });
-
 var myVar;
 
 function loader() {
-  myVar = setTimeout(showPage, 4950);
-  document.getElementById("body").style.overflow = "hidden";	  
+  myVar = setTimeout(showPage, 4150);
+  document.getElementById("body").style.overflow = "hidden";	
   window.location.href = mainNavLinks[2];  
   setTimeout(function() { 
-  window.location.href = mainNavLinks[0]; 
-  }, 4400); 
+  window.location.href = mainNavLinks[0];
+  }, 3000);
+ setTimeout(function() { 
+ document.getElementById("preloader").classList.add("up");   
+  }, 3500);
 }
 
 function showPage() {
+  
   document.getElementById("preloader").style.display = "none";	  
   document.getElementById("body").style.overflow = "visible";	
 }
