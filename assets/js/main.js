@@ -26,24 +26,21 @@ $(window).scroll(function() {
     }
   });
 });
+
 var myVar;
 
 function loader() {
-  myVar = setTimeout(showPage, 4150);
-  document.getElementById("body").style.overflow = "hidden";
-  window.location.href = mainNavLinks[2];
-  setTimeout(function() {
-    window.location.href = mainNavLinks[0];
-  }, 3000);
-  setTimeout(function() {
-    document.getElementById("preloader").classList.add("up");
-  }, 3500);
+  myVar = setTimeout(showPage, 4950);
+  document.getElementById("body").style.overflow = "hidden";	  
+  window.location.href = mainNavLinks[2];  
+  setTimeout(function() { 
+  window.location.href = mainNavLinks[0]; 
+  }, 4400); 
 }
 
 function showPage() {
-
-  document.getElementById("preloader").style.display = "none";
-  document.getElementById("body").style.overflow = "visible";
+  document.getElementById("preloader").style.display = "none";	  
+  document.getElementById("body").style.overflow = "visible";	
 }
 
 
@@ -82,10 +79,7 @@ const dsr = ScrollReveal({
   reset: false
 });
 
-dsr.reveal('.nav__item', {
-  delay: 500,
-  interval: 400
-});
+dsr.reveal('.nav__item', {delay: 500, interval: 400});
 
 const sr = ScrollReveal({
   origin: 'top',
