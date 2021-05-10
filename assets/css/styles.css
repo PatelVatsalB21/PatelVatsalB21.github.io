@@ -173,7 +173,6 @@ img {
     stroke-dasharray: 1000;
     stroke-dashoffset: 0;
     animation: dash 1.5s alternate infinite;
-    animation-iteration-count: 2;
 }
 #loader {
     position: absolute;
