@@ -643,14 +643,12 @@ img {
 @media screen and (max-width: 320px) {
 
 	#loader {
-	    position: absolute;
-	    left: 50%;
-	    top: 50%;
+	    position: relative;
 	    z-index: 1;
 	    width: 60px;
 	    height: 60px;
-	    margin: -76px 0 0 -76px;
 	    padding: 0;
+	    align-self: center;
 	}
 	.home__data {
         display: flex;
@@ -933,11 +931,12 @@ img {
         margin-bottom: -1rem;
     }
     #resume .timeline-header {
-    	padding-left: 2rem;
+    	padding-left: 1rem;
         margin-bottom: -1rem;
+        margin-right: 1rem;
     }
     #resume .timeline-content {
-        padding-left: 3rem;
+        padding-left: 5rem;
         margin-right: 1rem;
     }
 
