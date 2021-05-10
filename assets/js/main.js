@@ -20,6 +20,12 @@ $(window).scroll(function() {
       section.offsetTop - 35 <= fromTop &&
       section.offsetTop + section.offsetHeight - 35 > fromTop
     ) {
+     
+	    if (link.hash == mainNavLinks[4].hash){
+	    	if (section.offsetTop + section.offsetHeight < (section.offsetHeight - 50)) {
+		    	 
+			}
+	    }
       link.classList.add("active");
     } else {
       link.classList.remove("active");
@@ -204,15 +210,10 @@ const bsr = ScrollReveal({
   origin: 'bottom',
   distance: '100px',
   duration: 1000,
-  reset: true
+  reset: true,
 });
 
 bsr.reveal('.footer', {
   delay: 200,
   interval: 400
-})
-
-bsr.reveal('.footer__icon', {
-  delay: 800,
-  interval: 200
 })
