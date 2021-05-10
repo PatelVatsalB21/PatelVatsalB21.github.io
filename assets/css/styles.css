@@ -203,9 +203,9 @@ img {
     width: 90%;
 }
 
-
 @media screen and (max-width: 768px) {
     .nav__menu {
+    	display: none;
     }
 }
 
@@ -667,8 +667,8 @@ img {
         margin: 0 auto;
         justify-self: center;
  		top: 30%;
-	    padding: 0.5rem 1rem;
-	    margin-bottom: var(--mb-4);
+	    margin-bottom: var(--mb-2);
+		padding-left: 0rem;
     }
     .hero-bg {
 	    background-image: linear-gradient(to right bottom, #007dfb, #4965dd, #5d4ebf, #65369f, #661b80);
@@ -1028,6 +1028,8 @@ img {
 	  	position: relative;
         justify-self: center;
         justify-content: center;
+	    margin-bottom: var(--mb-2);
+		padding-left: 0rem;
     }
     .hero-bg {
 	    background-image: linear-gradient(to right bottom, #007dfb, #4965dd, #5d4ebf, #65369f, #661b80);
