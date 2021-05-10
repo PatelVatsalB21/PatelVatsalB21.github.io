@@ -896,7 +896,7 @@ img {
 	}
 	#resume .timeline-header h3 {
 	    margin-bottom: 0;
-	    font-size: 1rem;
+	    font-size: 0.8rem;
 	    color: var(--first-color);
 	}
 	#resume .timeline-header p {
