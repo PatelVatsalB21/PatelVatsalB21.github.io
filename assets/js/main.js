@@ -35,7 +35,7 @@ $(window).scroll(function() {
 var myVar;
 
 function loader() {
-  myVar = setTimeout(showPage, 4150);
+  myVar = setTimeout(showPage, 4050);
   document.getElementById("body").style.overflow = "hidden";
   window.location.href = mainNavLinks[2];
   setTimeout(function() {
@@ -131,8 +131,8 @@ sr.reveal('.timeline-ico', {
 });
 
 sr.reveal('.footer__title', {
-  delay: 200,
-  interval: 300
+  delay: 300,
+  interval: 400
 });
 
 const lsr = ScrollReveal({
@@ -215,5 +215,5 @@ const bsr = ScrollReveal({
 
 bsr.reveal('.footer', {
   delay: 200,
-  interval: 400
+  interval: 500
 })
