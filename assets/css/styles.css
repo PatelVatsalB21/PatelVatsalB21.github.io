@@ -1226,8 +1226,8 @@ img {
         margin-bottom: -1rem;
     }
     #resume .timeline-header {
-    	padding-left: 2rem;
-    	padding-right: 3rem;
+    	padding-left: 5rem;
+    	margin-right: 3rem;
         margin-bottom: -1rem;
     }
     #resume .timeline-content {
