@@ -1223,11 +1223,11 @@ img {
         line-height: 2.4rem;
         left: 0.5rem;
         font-size: 1.5rem;
-        margin-left: 0.8rem;
+        margin-left: 0.4rem;
         margin-bottom: -1rem;
     }
     #resume .timeline-header {
-    	padding-left: 2rem;
+    	padding-left: 4rem;
     	padding-right: 3rem;
         margin-bottom: -1rem;
     }
