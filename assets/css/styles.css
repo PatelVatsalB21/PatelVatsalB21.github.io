@@ -907,11 +907,13 @@ img {
 
 	#resume .timeline-content h3 {
 	    position: relative;
+	    padding-top: .5rem;
 	    padding-bottom: .5rem;
 	    font-size: 0.8rem;
 	}
 	#resume .timeline-content p {
 	    position: relative;
+	    padding-top: 1rem;
 	    padding-bottom: .5rem;
 	    font-size: 0.6rem;
 	}
