@@ -543,7 +543,7 @@ img {
 #resume .timeline-ico i {
     position: relative;
     left: 0.0395rem;
-    top: 0.13rem;
+    top: 0.12rem;
     transform: scale(1.5);
 }
 
@@ -927,11 +927,11 @@ img {
         margin-bottom: -1rem;
     }
     #resume .timeline-header {
-    	padding-left: 5rem;
+    	padding-left: 3rem;
         margin-bottom: -1rem;
     }
     #resume .timeline-content {
-        padding-left: 2rem;
+        padding-left: 3rem;
         margin-right: 1rem;
     }
 
