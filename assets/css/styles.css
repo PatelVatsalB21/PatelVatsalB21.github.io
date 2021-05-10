@@ -927,7 +927,7 @@ img {
         margin-bottom: -1rem;
     }
     #resume .timeline-header {
-    	padding-left: 3rem;
+    	padding-left: 2rem;
         margin-bottom: -1rem;
     }
     #resume .timeline-content {
@@ -940,7 +940,6 @@ img {
     color: #fff;
     text-align: center;
     font-weight: var(--font-semi);
-    padding: 2rem;
     background-image: linear-gradient(
         to bottom,
         #0c1c36,
@@ -959,16 +958,16 @@ img {
 }
 .footer__title {
     color: var(--yellow-light);
-    font-size: 2rem;
-    margin-bottom: var(--mb-4);
+    font-size: 1.5rem;
+    margin-bottom: var(--mb-2);
 }
 .footer__social {
     margin: var(--mb-4);
 }
 .footer__icon {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #fff;
-    margin: var(--mb-2);
+    margin: var(--mb-1);
 }
 .footer__icon:hover {
     color: var(--yellow-light);
