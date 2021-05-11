@@ -20,6 +20,12 @@ $(window).scroll(function() {
       section.offsetTop - 35 <= fromTop &&
       section.offsetTop + section.offsetHeight - 35 > fromTop
     ) {
+     
+	    if (link.hash == mainNavLinks[4].hash){
+	    	if (section.offsetTop + section.offsetHeight < (section.offsetHeight - 50)) {
+		    	 
+			}
+	    }
       link.classList.add("active");
     } else {
       link.classList.remove("active");
@@ -29,21 +35,21 @@ $(window).scroll(function() {
 var myVar;
 
 function loader() {
-  myVar = setTimeout(showPage, 4150);
-  document.getElementById("body").style.overflow = "hidden";	
-  window.location.href = mainNavLinks[2];  
-  setTimeout(function() { 
-  window.location.href = mainNavLinks[0];
+  myVar = setTimeout(showPage, 4050);
+  document.getElementById("body").style.overflow = "hidden";
+  window.location.href = mainNavLinks[2];
+  setTimeout(function() {
+    window.location.href = mainNavLinks[0];
   }, 3000);
- setTimeout(function() { 
- document.getElementById("preloader").classList.add("up");   
+  setTimeout(function() {
+    document.getElementById("preloader").classList.add("up");
   }, 3500);
 }
 
 function showPage() {
-  
-  document.getElementById("preloader").style.display = "none";	  
-  document.getElementById("body").style.overflow = "visible";	
+
+  document.getElementById("preloader").style.display = "none";
+  document.getElementById("body").style.overflow = "visible";
 }
 
 
@@ -82,7 +88,10 @@ const dsr = ScrollReveal({
   reset: false
 });
 
-dsr.reveal('.nav__item', {delay: 500, interval: 400});
+dsr.reveal('.nav__item', {
+  delay: 500,
+  interval: 400
+});
 
 const sr = ScrollReveal({
   origin: 'top',
@@ -122,8 +131,8 @@ sr.reveal('.timeline-ico', {
 });
 
 sr.reveal('.footer__title', {
-  delay: 200,
-  interval: 300
+  delay: 300,
+  interval: 400
 });
 
 const lsr = ScrollReveal({
@@ -201,15 +210,10 @@ const bsr = ScrollReveal({
   origin: 'bottom',
   distance: '100px',
   duration: 1000,
-  reset: true
+  reset: true,
 });
 
 bsr.reveal('.footer', {
   delay: 200,
-  interval: 400
-})
-
-bsr.reveal('.footer__icon', {
-  delay: 800,
-  interval: 200
+  interval: 500
 })
