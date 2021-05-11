@@ -107,8 +107,8 @@ img {
 }
 .section {
     padding-bottom: 10rem;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 /*===== LAYOUT =====*/
@@ -576,7 +576,7 @@ img {
     margin-left: 35%;
     padding-left: 60px;
 }
-#resume .timeline-content h4 {
+#resume .timeline-content h3 {
     position: relative;
     padding-bottom: 1.8rem;
 }
@@ -654,6 +654,22 @@ img {
 
 @media screen and (max-width: 320px) {
 
+	.section-title {
+	    position: relative;
+	    font-size: var(--h2-font-size);
+	    color: var(--yellow-light);
+	    margin-top: var(--mb-2);
+	    margin-bottom: var(--mb-4);
+	    text-align: center;
+	    display: inline-block;
+	    border-bottom: 5px solid #fdd055;
+	}
+    .section {
+        padding-top: 1rem;
+        padding-left: 1rem;
+	    padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
 	#loader {
 	    position: relative;
 	    z-index: 1;
@@ -771,6 +787,7 @@ img {
     .skills__container {
 	    row-gap: 2rem;
 	    text-align: center;
+	    width: 100%;
 	}
 	.skills__subtitle {
 	    color: var(--first-color);
@@ -840,7 +857,6 @@ img {
 	    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 	    margin: 8px 10px 12px;
 	}
-
 	#resume {
 	    padding-top: 5rem;
 	    padding-bottom: 5em;
@@ -868,11 +884,11 @@ img {
 	    content: "";
 	    display: inline;
 	    width: 1px;
-	    height: 100%;
+	    height: 97%;
 	    background: rgba(0, 0, 0, 0.1);
 	    position: absolute;
 	    left: -50%;
-	    top: 0;
+	    top: 4%;
 	}
 	#resume .timeline-block {
 	    position: relative;
@@ -886,32 +902,23 @@ img {
 	    font-size: 1rem;
 	}
 	#resume .timeline-header h3 {
-	    font-size: 0.8rem;
+	    margin-bottom: 0;
+	    font-size: 1.3rem;
 	    color: var(--first-color);
-        text-align: left;
 	}
 	#resume .timeline-header p {
+		padding-top: .5rem;
 	    font-family: "poppins-regular", sans-serif;
-	    font-size: 0.8rem;
+	    font-size: 1rem;
 	    color: #888888;
-        text-align: left;
 	}
-
 	#resume .timeline-content h3 {
 	    position: relative;
-	    padding-top: 1rem;
-	    padding-bottom: .5rem;
-	    font-size: 0.8rem;
 	}
 	#resume .timeline-content p {
-	    position: relative;
-	    padding-top: 1rem;
-	    padding-bottom: .5rem;
-	    font-size: 0.6rem;
+	    font-family: "poppins-regular", sans-serif;
+	    font-size: 1rem;
 	}
-	#resume .resume-header h2 {
-        font-size: 2.2rem;
-    }
     #resume .timeline-wrap::before {
         left: 2.1rem;
     }
@@ -920,23 +927,31 @@ img {
         width: 2.4rem;
         line-height: 2.4rem;
         left: 0.5rem;
-        margin-left: 0.4rem;
         font-size: 1.5rem;
+        margin-left: 0.4rem;
         margin-bottom: -1rem;
     }
     #resume .timeline-header {
-    	padding-right: : 2rem;
-        margin-bottom: -1rem;
-        margin-right: 1rem;
-        align-items: left;
-        align-content: left;
-        text-align: left;
+    	padding-left: 2rem;
+    	padding-right: 3rem;
+        margin-bottom: 2rem;
+	    float: left;
+	    width: 100%;
+	    text-align: center;
+	    align-self: center;
+	    padding-top: 0.5rem;
     }
     #resume .timeline-content {
-        margin-left: 1rem;
+    	padding-left: 2rem;
+    	padding-right: 3rem;
+        margin-bottom: 2rem;
         margin-right: 1rem;
+        margin-left: 1rem;
+	    width: 80%;
+	    text-align: center;
+	    align-self: center;
+	    padding-top: 0.5rem;
     }
-
 
 /* ===== FOOTER =====*/
 	.footer {
@@ -988,46 +1003,22 @@ img {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 480px) {
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 768px ) {
+
+	.section-title {
+	    position: relative;
+	    font-size: var(--h2-font-size);
+	    color: var(--yellow-light);
+	    margin-top: var(--mb-2);
+	    margin-bottom: var(--mb-4);
+	    text-align: center;
+	    display: inline-block;
+	    border-bottom: 5px solid #fdd055;
+	}
     .section {
         padding-top: 1rem;
+        padding-left: 1rem;
+	    padding-right: 1rem;
         padding-bottom: 1rem;
     }
     .home__data {
@@ -1116,7 +1107,7 @@ img {
     }
     .about__container {
         text-align: center;
-        margin-top: 3rem;
+        margin-top: 1rem;
         justify-content: center;
         justify-self: center;
     }
@@ -1129,6 +1120,7 @@ img {
         float: none;
         display: block;
         justify-self: center;
+        padding: 3px;
     }
     .about__subtitle .lead {
         padding-left: 0;
@@ -1157,8 +1149,6 @@ img {
 	    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 	    margin: 8px 10px 12px;
 	}
-
-
 	#resume {
 	    padding-top: 5rem;
 	    padding-bottom: 5em;
@@ -1186,11 +1176,11 @@ img {
 	    content: "";
 	    display: inline;
 	    width: 1px;
-	    height: 100%;
+	    height: 97%;
 	    background: rgba(0, 0, 0, 0.1);
 	    position: absolute;
 	    left: -50%;
-	    top: 0;
+	    top: 4%;
 	}
 	#resume .timeline-block {
 	    position: relative;
@@ -1209,18 +1199,19 @@ img {
 	    color: var(--first-color);
 	}
 	#resume .timeline-header p {
+		padding-top: .5rem;
 	    font-family: "poppins-regular", sans-serif;
 	    font-size: 1rem;
 	    color: #888888;
 	}
-
 	#resume .timeline-content h3 {
 	    position: relative;
-	    padding-bottom: .5rem;
 	}
-	#resume .resume-header h2 {
-        font-size: 2.2rem;
-    }
+	#resume .timeline-content p {
+		margin-top: -2rem;
+	    font-family: "poppins-regular", sans-serif;
+	    font-size: 1rem;
+	}
     #resume .timeline-wrap::before {
         left: 2.1rem;
     }
@@ -1234,15 +1225,25 @@ img {
         margin-bottom: -1rem;
     }
     #resume .timeline-header {
-    	padding-left: 4rem;
-    	padding-right: 3rem;
-        margin-bottom: -1rem;
+    	padding-left: 1rem;
+    	padding-right: 2rem;
+        margin-bottom: 2rem;
+	    float: left;
+	    width: 100%;
+	    text-align: center;
+	    align-self: center;
+	    padding-top: 0.5rem;
     }
     #resume .timeline-content {
-        padding-left: 2rem;
+    	padding-left: 3rem;
+    	padding-right: 2rem;
         margin-right: 1rem;
+        margin-left: 1rem;
+	    width: 80%;
+	    text-align: center;
+	    align-self: center;
+	    padding-top: 0.5rem;
     }
-
 
 	/* ===== FOOTER =====*/
 	.footer {
