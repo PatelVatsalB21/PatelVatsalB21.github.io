@@ -4,7 +4,7 @@ let mainSections = document.querySelectorAll("section");
 let lastId;
 let cur = [];
 
-$(window).scroll(function() {
+$(window).scroll(function () {
   var scroll = $(window).scrollTop();
   $(".hero-bg").css({
     backgroundSize: (100 + scroll / 80) + "%",
@@ -14,18 +14,18 @@ $(window).scroll(function() {
 
   let fromTop = window.scrollY;
 
-  mainNavLinks.forEach(function(link, i) {
+  mainNavLinks.forEach(function (link, i) {
     let section = document.querySelector(link.hash);
     if (
       section.offsetTop - 35 <= fromTop &&
       section.offsetTop + section.offsetHeight - 35 > fromTop
     ) {
-     
-	    if (link.hash == mainNavLinks[4].hash){
-	    	if (section.offsetTop + section.offsetHeight < (section.offsetHeight - 50)) {
-		    	 
-			}
-	    }
+
+      if (link.hash == mainNavLinks[4].hash) {
+        if (section.offsetTop + section.offsetHeight < (section.offsetHeight - 50)) {
+
+        }
+      }
       link.classList.add("active");
     } else {
       link.classList.remove("active");
@@ -38,10 +38,10 @@ function loader() {
   myVar = setTimeout(showPage, 4050);
   document.getElementById("body").style.overflow = "hidden";
   window.location.href = mainNavLinks[2];
-  setTimeout(function() {
+  setTimeout(function () {
     window.location.href = mainNavLinks[0];
   }, 3000);
-  setTimeout(function() {
+  setTimeout(function () {
     document.getElementById("preloader").classList.add("up");
   }, 3500);
 }
@@ -118,9 +118,13 @@ sr.reveal('.home__social-icon', {
 
 /*SCROLL WORK*/
 sr.reveal('.work__img', {
+  delay: 400,
+  interval: 400
+});
+sr.reveal('.other__head', {
+  delay: 100,
   interval: 200
 });
-
 /*SCROLL CONTACT*/
 
 /*Resume*/
@@ -167,6 +171,11 @@ lsr.reveal('.skills__img', {
   delay: 600
 });
 
+lsr.reveal('.work__head', {
+  delay: 500,
+  interval: 300
+})
+
 lsr.reveal('.resume__type1', {
   delay: 200
 })
@@ -192,6 +201,11 @@ rsr.reveal('.about__text', {
   delay: 400
 });
 
+rsr.reveal('.work__detail', {
+  delay: 600,
+  interval: 300
+})
+
 rsr.reveal('.resume__type1_desc', {
   delay: 200
 })
@@ -211,6 +225,22 @@ const bsr = ScrollReveal({
   distance: '100px',
   duration: 1000,
   reset: true,
+});
+
+
+bsr.reveal('.work__item', {
+  delay: 200,
+  interval: 200
+})
+
+bsr.reveal('.tech__stack', {
+  delay: 500,
+  interval: 200
+})
+
+bsr.reveal('.other__item', {
+  delay: 300,
+  interval: 500
 });
 
 bsr.reveal('.footer', {
