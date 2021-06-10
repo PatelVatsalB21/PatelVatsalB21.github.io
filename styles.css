@@ -601,12 +601,11 @@ img {
     text-align: center;
     display: flex;
     flex-direction: row;
-  background: #fff;
-  overflow: hidden; 
-  align-items: center;
-  transition: all 0.3s ease-out;
-  text-decoration: none;
-  z-index: 1;
+    background: #fff;
+    overflow: hidden; 
+    align-items: center;
+    transition: all 0.3s ease-out;
+    z-index: 1;
 }
 
 .work__item2:hover {
