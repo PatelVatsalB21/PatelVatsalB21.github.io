@@ -121,6 +121,12 @@ sr.reveal('.work__img', {
   delay: 400,
   interval: 400
 });
+
+sr.reveal('.overlay', {
+  delay: 400,
+  interval: 400
+});
+
 sr.reveal('.other__head', {
   delay: 100,
   interval: 200
