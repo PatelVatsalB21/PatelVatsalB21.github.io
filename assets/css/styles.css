@@ -1125,9 +1125,6 @@ img {
         clear: both;
     }
     .work_item {
-
-    }
-    .work__item2 {
         box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
         cursor: pointer;
         border-radius: 10px;
@@ -1135,103 +1132,85 @@ img {
         width: 90%;
         float: left;
         position: relative;
+        transition: transform 1s;
         text-align: center;
         display: flex;
         margin-bottom: 2rem;
         flex-direction: column;
-        align-items: center;    
-        overflow: hidden;
-        transition: all 0.3s ease-out;
-    }
-    .work__item__detail {
-        float: left;
-        position: relative;
-        padding: 1rem;
-        text-align: center;
-        display: flex;
-        background: #fff;
-        overflow: hidden; 
         align-items: center;
-        transition: all 0.3s ease-out;
-        text-decoration: none;
-        z-index: 1;
     }
-
     .work__item:hover {
         transform: scale(1.1);
     }
+
+    .work__item2 {
+    }
+    .work__item__detail {
+        clear: both;
+        float: left;
+        position: relative;
+        padding: 5px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        align-items: center;
+        transition: all 0.3s ease-out;
+    }
     .work__img img {
         align-self: center;
-        border-radius: 1.75rem;
         margin: auto;
         margin: 1rem;
         box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
         max-width: 125px;
         max-height: 125px;
-        border-radius: 50%;
-        z-index: 10000;
     }
     .work__about {
-        align-items: center; 
-        z-index: 3;
+        align-items: center;
     }
     .work__head {
         color: var(--first-color);
         margin-bottom: 0.5rem;
         margin-top: 1rem;
         text-align: center;
-        z-index: 1000;
-        transition: color 0.3s ease-out;
     }
     .work__detail {
         color: var(--second-color);
         text-align: left;
         padding: 0.75rem;
-        font-size: var(--normal-font-size);
-        z-index: 1000;
+        font-size: var(--normal-font-size);        
     }
     .work__img {
-        border-radius: 50%;
-        background: #fff;
-        border: 2px solid var(--bg-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        z-index: 3;
-        transition: all 0.3s ease-out;
     }
-.work__img:after {
-  content: "";
-  display: block;
-  position: absolute;
-  background: var(--bg-color);
-  border-radius: 50%;
-  top: 7px;
-  left: 7px;
-  transition: opacity 0.3s ease-out;
-}
+    .work__img:after {}
+    .overlay {
+        display: none;
+    }
 
-.schedule {
-  --bg-color: #DCE9FF;
-  --bg-color-light: #f1f7ff;
-  --box-shadow-color: rgba(220, 233, 255, 0.48);
-}
+    .schedule {
+      --bg-color: #DCE9FF;
+      --bg-color-light: #f1f7ff;
+      --box-shadow-color: rgba(220, 233, 255, 0.48);
+    }
 
-.sound {
-  --bg-color: #e4d4ff;
-  --bg-color-light: #F0E7FF;
-  --box-shadow-color: rgba(206, 178, 252, 0.48);
-}
+    .sound {
+      --bg-color: #e4d4ff;
+      --bg-color-light: #F0E7FF;
+      --box-shadow-color: rgba(206, 178, 252, 0.48);
+    }
 
-.apache {
-  --bg-color: #ffcffa;
-  --bg-color-light: #ffdefc;
-  --box-shadow-color: rgba(220, 233, 255, 0.48);
-}
+    .apache {
+      --bg-color: #ffcffa;
+      --bg-color-light: #ffdefc;
+      --box-shadow-color: rgba(220, 233, 255, 0.48);
+    }
 
-
-
+    .work__detail {
+        color: var(--second-color);
+        text-align: left;
+        padding: 0.75rem;
+        font-size: var(--normal-font-size);
+    }
     .tech__stack {
         text-align: left;
         padding: 0.75rem;
@@ -1253,10 +1232,13 @@ img {
         text-align: center;
         display: inline-block;
     }
-
-    .other__projects a:hover {
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-        transform: scale(1.05);
+    .other__item {
+    }
+    .other__item h2 {
+        text-align: left;
+        font-size: var(--medium-font-size);
+        color: var(--first-color);
+        padding: 0.5rem;
     }
 
     .other__projects a {
@@ -1271,12 +1253,17 @@ img {
         margin-bottom: 2rem;
         align-self: center;
     }
-    .other__item h2 {
+
+    .tech__stack {
         text-align: left;
-        font-size: var(--medium-font-size);
-        color: var(--first-color);
-        padding: 0.5rem;
+        padding: 0.75rem;
+        color: var(--second-color);
     }
+    .tech {
+        color: var(--first-color);
+        font-size: var(--medium-font-size);
+    }
+   
 
     #resume {
         padding-top: 5rem;
@@ -1547,10 +1534,7 @@ img {
     .work__container {
         clear: both;
     }
-       .work_item {
-
-    }
-    .work__item2 {
+    .work_item {
         box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
         cursor: pointer;
         border-radius: 10px;
@@ -1558,71 +1542,59 @@ img {
         width: 90%;
         float: left;
         position: relative;
+        transition: transform 1s;
         text-align: center;
         display: flex;
         margin-bottom: 2rem;
-        align-items: center;    
-        overflow: hidden;
-        transition: all 0.3s ease-out;
+        flex-direction: column;
+        align-items: center;
+    }
+    .work__item:hover {
+        transform: scale(1.1);
+    }
+
+    .work__item2 {
     }
     .work__item__detail {
+        clear: both;
         float: left;
         position: relative;
-        padding: 1rem;
+        padding: 5px;
         text-align: center;
         display: flex;
         flex-direction: column;
         background: #fff;
-        overflow: hidden; 
         align-items: center;
         transition: all 0.3s ease-out;
-        text-decoration: none;
-        z-index: 1;
-    }
-
-    .work__item:hover {
-        transform: scale(1.1);
     }
     .work__img img {
         align-self: center;
-        border-radius: 1.75rem;
         margin: auto;
         margin: 1rem;
         box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
         max-width: 125px;
         max-height: 125px;
-        border-radius: 50%;
-        z-index: 10000;
     }
     .work__about {
-        align-items: center; 
-        z-index: 3;
+        align-items: center;
     }
     .work__head {
         color: var(--first-color);
         margin-bottom: 0.5rem;
         margin-top: 1rem;
         text-align: center;
-        z-index: 1000;
-        transition: color 0.3s ease-out;
     }
     .work__detail {
         color: var(--second-color);
         text-align: left;
         padding: 0.75rem;
-        font-size: var(--normal-font-size);
-        z-index: 1000;
+        font-size: var(--normal-font-size);        
     }
     .work__img {
-        border-radius: 50%;
-        background: #fff;
-        border: 2px solid var(--bg-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        z-index: 3;
-        transition: all 0.3s ease-out;
+    }
+    .work__img:after {}
+    .overlay {
+        display: none;
     }
 
     .schedule {
@@ -1643,10 +1615,12 @@ img {
       --box-shadow-color: rgba(220, 233, 255, 0.48);
     }
 
-    .overlay{
-        display: none;
+    .work__detail {
+        color: var(--second-color);
+        text-align: left;
+        padding: 0.75rem;
+        font-size: var(--normal-font-size);
     }
-
     .tech__stack {
         text-align: left;
         padding: 0.75rem;
@@ -1668,9 +1642,13 @@ img {
         text-align: center;
         display: inline-block;
     }
-    .other__projects a:hover {
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-        transform: scale(1.05);
+    .other__item {
+    }
+    .other__item h2 {
+        text-align: left;
+        font-size: var(--medium-font-size);
+        color: var(--first-color);
+        padding: 0.5rem;
     }
 
     .other__projects a {
@@ -1685,12 +1663,17 @@ img {
         margin-bottom: 2rem;
         align-self: center;
     }
-    .other__item h2 {
+
+    .tech__stack {
         text-align: left;
-        font-size: var(--medium-font-size);
-        color: var(--first-color);
-        padding: 0.5rem;
+        padding: 0.75rem;
+        color: var(--second-color);
     }
+    .tech {
+        color: var(--first-color);
+        font-size: var(--medium-font-size);
+    }
+   
 
     #resume {
         padding-top: 5rem;
