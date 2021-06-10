@@ -576,6 +576,7 @@ img {
 }
 
 .work__item {
+    align-self: center;
 }
 
 .work__item2 {
@@ -596,6 +597,7 @@ img {
 
 .work__item__detail {
     float: left;
+    width: 100%;
     position: relative;
     padding: 1rem;
     text-align: center;
@@ -615,7 +617,7 @@ img {
 }
 
 .work__item2:hover .overlay2 {
-  transform: scale(20) translateZ(0);
+  transform: scale(30) translateZ(0);
 }
 
 .work__item2:hover .work__img {
