@@ -804,10 +804,8 @@ img {
 }
 
 #work_popup_overlay {
-     /*visibility: hidden;    */
      bottom:0;
      left:0;
-     /*opacity:0;*/
      position:fixed;
      right:0;
      top:0;
@@ -815,19 +813,14 @@ img {
      -moz-transition: opacity 400ms ease-in;
      transition: opacity 400ms ease-in;
      z-index:-1;
-     /*display: none;*/
      justify-content: center;
      animation: fadeout 1s;
      transition: 1s;
  }
 
 #work_popup_overlay.active {
-    /*visibility: visible;*/
-    /*display: block;*/
-    /*opacity:1;*/
     z-index:99;
     background:rgba(0,0,0,0.8);
-    /*transform: scale(1);*/
     animation: fadein 0.8s;
 }
 
@@ -841,8 +834,6 @@ img {
     width: 70%;
     padding: 2rem;
     background: #fff;
-    /*visibility: hidden;*/
-    /*opacity: 0;*/
     z-index: 999;
     border-radius: 10px;
     overflow: auto;
@@ -865,8 +856,6 @@ img {
 }
 
 #work_popup.active {
-    /*visibility: visible;*/
-    /*opacity: 1;*/
     transform: translate(-50%, -50%) scale(1);
     transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
