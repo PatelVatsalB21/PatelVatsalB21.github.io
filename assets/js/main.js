@@ -6,6 +6,14 @@ let cur = [];
 
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
+
+  if (scroll >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+
+
   $(".hero-bg").css({
     backgroundSize: (100 + scroll / 80) + "%",
     top: -(scroll / 10) + "%",
@@ -17,12 +25,12 @@ $(window).scroll(function () {
   mainNavLinks.forEach(function (link, i) {
     let section = document.querySelector(link.hash);
     if (
-      section.offsetTop - 35 <= fromTop &&
-      section.offsetTop + section.offsetHeight - 35 > fromTop
+      section.offsetTop - 150 <= fromTop &&
+      section.offsetTop + section.offsetHeight - 150 > fromTop
     ) {
 
       if (link.hash == mainNavLinks[4].hash) {
-        if (section.offsetTop + section.offsetHeight < (section.offsetHeight - 50)) {
+        if (section.offsetTop + section.offsetHeight < (section.offsetHeight)) {
 
         }
       }
@@ -47,7 +55,6 @@ function loader() {
 }
 
 function showPage() {
-
   document.getElementById("preloader").style.display = "none";
   document.getElementById("body").style.overflow = "visible";
 }
@@ -90,7 +97,7 @@ const dsr = ScrollReveal({
 
 dsr.reveal('.nav__item', {
   delay: 500,
-  interval: 400
+  interval: 400,
 });
 
 const sr = ScrollReveal({
@@ -253,3 +260,99 @@ bsr.reveal('.footer', {
   delay: 200,
   interval: 500
 })
+
+class TypeWriter {
+  constructor(txtElement, words, wait = 3000) {
+    this.txtElement = txtElement;
+    this.words = words;
+    this.txt = '';
+    this.wordIndex = 0;
+    this.wait = parseInt(wait, 10);
+    this.type();
+    this.isDeleting = false;
+  }
+
+  type() {
+    // Current index of word
+    const current = this.wordIndex % this.words.length;
+    // Get full text of current word
+    const fullTxt = this.words[current];
+
+    // Check if deleting
+    if(this.isDeleting) {
+      // Remove char
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      // Add char
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    // Insert txt into element
+    this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+
+    // Initial Type Speed
+    let typeSpeed = 200;
+
+    if(this.isDeleting) {
+      typeSpeed /= 2;
+    }
+
+    // If word is complete
+    if(!this.isDeleting && this.txt === fullTxt) {
+      // Make pause at end
+      typeSpeed = this.wait;
+      // Set delete to true
+      this.isDeleting = true;
+    } else if(this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      // Move to next word
+      this.wordIndex++;
+      // Pause before start typing
+      typeSpeed = 500;
+    }
+
+    setTimeout(() => this.type(), typeSpeed);
+  }
+}
+
+
+// Init On DOM Load
+document.addEventListener('DOMContentLoaded', setTimeout(init,4000));
+
+// Init App
+function init() {
+  const txtElement = document.querySelector('.home_title_name');
+  const words = JSON.parse(txtElement.getAttribute('data-words'));
+  const wait = txtElement.getAttribute('data-wait');
+  // Init TypeWriter
+  new TypeWriter(txtElement, words, wait);
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+function toggle() {
+  var blur = document.getElementById('work');
+  blur.classList.toggle('active');
+  var overlay = document.getElementById('work_popup_overlay');
+  overlay.classList.toggle('active');
+  var work_popup = document.getElementById('work_popup');
+  work_popup.classList.toggle('active');
+
+  var body = document.getElementById("body");
+
+  if(body.style.overflow === "hidden"){
+    body.style.overflow = "auto";
+    document.getElementById('return-to-top').style.display = "block";
+  }else{
+    body.style.overflow = "hidden";
+    document.getElementById('return-to-top').style.display = "none";
+  }
+
+  
+}
+
+
