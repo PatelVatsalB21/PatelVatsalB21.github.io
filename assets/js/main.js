@@ -226,9 +226,6 @@ rsr.reveal('.resume__type2_desc', {
   delay: 400
 })
 
-rsr.reveal('.skills__cv', {
-  delay: 200
-})
 rsr.reveal('.skills__exp', {
   delay: 400
 })
