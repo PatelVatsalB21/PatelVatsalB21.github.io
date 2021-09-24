@@ -348,8 +348,6 @@ function toggle() {
     body.style.overflow = "hidden";
     document.getElementById('return-to-top').style.display = "none";
   }
-
-  
 }
 
 
