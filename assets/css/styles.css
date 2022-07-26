@@ -515,52 +515,30 @@ img {
 
 .skills__data {
     display: flex;
+    width: max-content;
     justify-content: space-between;
     align-items: center;
     position: relative;
     font-weight: var(--font-semi);
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     margin-bottom: var(--mb-4);
+    margin-right: var(--mb-4);
     border-radius: 0.5rem;
     box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
 }
 
 .skills__icon {
+    display: block;
     font-size: 2rem;
     margin-right: var(--mb-2);
     color: var(--first-color);
 }
 
 .skills__names {
-    display: flex;
+    display: inline-block;
     align-items: center;
 }
 
-.skills__bar {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 0.25rem;
-    border-radius: 0.5rem;
-    z-index: var(--z-back);
-    background-image: linear-gradient(to right, #ffe08c 0%, #fd9d55 100%);
-}
-
-.skills__html {
-    width: 95%;
-}
-
-.skills__css {
-    width: 85%;
-}
-
-.skills__js {
-    width: 65%;
-}
-
-.skills__ux {
-    width: 85%;
-}
 
 .skills__img {
     border-radius: 0.5rem;
@@ -664,21 +642,27 @@ img {
     0 15px 24px var(--box-shadow-color);
 }
 
-.schedule {
-  --bg-color: #DCE9FF;
-  --bg-color-light: #f1f7ff;
+.uart {
+  --bg-color: #daf6ff;
+  --bg-color-light: #edfbff;
   --box-shadow-color: rgba(220, 233, 255, 0.48);
 }
 
-.sound {
-  --bg-color: #e4d4ff;
-  --bg-color-light: #F0E7FF;
+.ai {
+  --bg-color: #e4e0ff;
+  --bg-color-light: #f0eeff;
   --box-shadow-color: rgba(206, 178, 252, 0.48);
 }
 
-.apache {
-  --bg-color: #ffcffa;
-  --bg-color-light: #ffdefc;
+.pump {
+  --bg-color: #f8e7ff;
+  --bg-color-light: #fbf2ff;
+  --box-shadow-color: rgba(220, 233, 255, 0.48);
+}
+
+.mission {
+  --bg-color: #fff6f2;
+  --bg-color-light: #fff7f2;
   --box-shadow-color: rgba(220, 233, 255, 0.48);
 }
 
@@ -982,14 +966,7 @@ img {
     position: absolute;
     left: 35%;
     top: 3.5rem;
-    margin-left: -1.85rem;
-}
-
-#resume .timeline-ico i {
-    position: relative;
-    left: 0.0395rem;
-    top: 0.12rem;
-    transform: scale(1.5);
+    margin-left: -1.7rem;
 }
 
 #resume .timeline-header {
@@ -1018,6 +995,11 @@ img {
 #resume .timeline-content h3 {
     position: relative;
     padding-bottom: 1.8rem;
+}
+
+#resume .timeline-content p {
+    padding-right: 5rem;
+    padding-left: 5rem;
 }
 
 
@@ -1217,7 +1199,7 @@ img {
         align-items: center;
         position: relative;
         font-weight: var(--font-semi);
-        padding: 0.05rem 0.1rem;
+        padding: 0.5rem;
         margin-bottom: var(--mb-4);
         border-radius: 0.5rem;
         box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
@@ -1248,6 +1230,36 @@ img {
     }
     .skills__img {
         border-radius: 0.5rem;
+    }
+    table{
+        width:100%!important;
+        float:center;
+        clear:both;
+        display:block;
+        text-align:center;
+        overflow: hidden;
+        overflow-x: hidden;
+    }
+    tr{
+        width:100%!important;
+        float:center;
+        clear:both;
+        display: flex;
+        flex-direction: column;
+        text-align:center;
+        overflow: hidden;
+        overflow-x: hidden;
+    }
+    td{
+        width:100%!important;
+        float:center;
+        clear:both;
+        display: flex;
+        flex-direction: column;
+        text-align:center;
+        overflow: hidden;
+        overflow-x: hidden;
+        padding-left: 20px;
     }
     .skills__exp {
         display: inline-block;
@@ -1477,12 +1489,6 @@ img {
         position: relative;
         padding-top: 1.5rem;
     }
-    #resume .timeline-ico i {
-        position: relative;
-        top: -7%;
-        text-align: center;
-        font-size: 1rem;
-    }
     #resume .timeline-header h3 {
         margin-bottom: 0;
         font-size: 1.3rem;
@@ -1500,6 +1506,8 @@ img {
     #resume .timeline-content p {
         font-family: "poppins-regular", sans-serif;
         font-size: 1rem;
+        padding-right: 0rem;
+        padding-left: 0rem;
     }
     #resume .timeline-wrap::before {
         left: 2.1rem;
@@ -1687,6 +1695,36 @@ img {
     .about__subtitle .lead {
         padding-left: 0;
         text-align: center;
+    }
+    table{
+        width:100%!important;
+        float:center;
+        clear:both;
+        display:block;
+        text-align:center;
+        overflow: hidden;
+        overflow-x: hidden;
+    }
+    tr{
+        width:100%!important;
+        float:center;
+        clear:both;
+        display: flex;
+        flex-direction: column;
+        text-align:center;
+        overflow: hidden;
+        overflow-x: hidden;
+    }
+    td{
+        width:100%!important;
+        float:center;
+        clear:both;
+        display: flex;
+        flex-direction: column;
+        text-align:center;
+        overflow: hidden;
+        overflow-x: hidden;
+        padding-left: 20px;
     }
     .skills__exp {
         display: inline-block;
@@ -1877,12 +1915,6 @@ img {
         position: relative;
         padding-top: 1.5rem;
     }
-    #resume .timeline-ico i {
-        position: relative;
-        top: -7%;
-        text-align: center;
-        font-size: 1rem;
-    }
     #resume .timeline-header h3 {
         margin-bottom: 0;
         font-size: 1.3rem;
@@ -1901,6 +1933,8 @@ img {
         margin-top: -2rem;
         font-family: "poppins-regular", sans-serif;
         font-size: 1rem;
+        padding-right: 4rem;
+        padding-left: 4rem;
     }
     #resume .timeline-wrap::before {
         left: 2.1rem;
