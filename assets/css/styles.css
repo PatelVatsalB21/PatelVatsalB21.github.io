@@ -643,26 +643,26 @@ img {
 }
 
 .uart {
-  --bg-color: #daf6ff;
-  --bg-color-light: #edfbff;
+  --bg-color: #c7f1ff;
+  --bg-color-light: #d8f5ff;
   --box-shadow-color: rgba(220, 233, 255, 0.48);
 }
 
 .ai {
-  --bg-color: #e4e0ff;
-  --bg-color-light: #f0eeff;
+  --bg-color: #d2cbff;
+  --bg-color-light: #dfdaff;
   --box-shadow-color: rgba(206, 178, 252, 0.48);
 }
 
 .pump {
-  --bg-color: #f8e7ff;
-  --bg-color-light: #fbf2ff;
+  --bg-color: #f0cbff;
+  --bg-color-light: #f5ddff;
   --box-shadow-color: rgba(220, 233, 255, 0.48);
 }
 
 .mission {
-  --bg-color: #fff6f2;
-  --bg-color-light: #fff7f2;
+  --bg-color: #ffe2d5;
+  --bg-color-light: #ffeae1;
   --box-shadow-color: rgba(220, 233, 255, 0.48);
 }
 
@@ -1241,7 +1241,7 @@ img {
         overflow-x: hidden;
     }
     tr{
-        width:100%!important;
+        width:max-content;
         float:center;
         clear:both;
         display: flex;
@@ -1251,7 +1251,7 @@ img {
         overflow-x: hidden;
     }
     td{
-        width:100%!important;
+        width:max-content;
         float:center;
         clear:both;
         display: flex;
@@ -1706,7 +1706,7 @@ img {
         overflow-x: hidden;
     }
     tr{
-        width:100%!important;
+        width:max-content;
         float:center;
         clear:both;
         display: flex;
@@ -1716,7 +1716,7 @@ img {
         overflow-x: hidden;
     }
     td{
-        width:100%!important;
+        width:max-content;
         float:center;
         clear:both;
         display: flex;
